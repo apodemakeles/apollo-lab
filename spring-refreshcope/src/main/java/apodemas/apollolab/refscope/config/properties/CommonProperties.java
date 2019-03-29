@@ -15,6 +15,9 @@ public class CommonProperties {
     private String name;
     private String address;
 
+    public CommonProperties(){
+        System.out.println("====================refresh======================");
+    }
 
     public String getName() {
         return name;

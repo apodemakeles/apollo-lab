@@ -11,6 +11,12 @@ import org.springframework.context.ConfigurableApplicationContext;
  **/
 @SpringBootApplication
 public class SpringBootRefscopeApplication {
+
+    /**
+     * refresh scope方法，会造成bean的重建。
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception{
         ConfigurableApplicationContext ctx = SpringApplication.run(SpringBootRefscopeApplication.class, args);
         CommonProperties commonProperties = ctx.getBean(CommonProperties.class);
