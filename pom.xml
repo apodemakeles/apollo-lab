@@ -12,6 +12,7 @@
         <module>common-lab</module>
         <module>spring-lab</module>
         <module>spring-refreshcope</module>
+        <module>spring-env</module>
     </modules>
 
 </project>
