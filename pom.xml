@@ -13,6 +13,8 @@
         <module>spring-lab</module>
         <module>spring-refreshcope</module>
         <module>spring-env</module>
+        <module>eureka</module>
+        <module>apolloconfig</module>
     </modules>
 
 </project>
