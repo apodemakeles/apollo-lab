@@ -2,6 +2,8 @@ package apodemas.apollolab.springlab;
 
 import apodemas.apollolab.springlab.config.properties.CommonConfig;
 import apodemas.apollolab.springlab.config.properties.CommonProperties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -15,6 +17,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class SpringBootCommonApplication {
 
+    private static final Logger logger = LogManager.getRootLogger();
     /**
      * 无法实现动态更新。
      * 云上的配置会覆盖本地配置。
@@ -36,6 +39,8 @@ public class SpringBootCommonApplication {
             System.out.println("config's address:" + config.getAddress());
             System.out.println("mock bean's name:" + mockBean.getName());
             System.out.println("mock bean's address:" + mockBean.getAddress());
+            logger.debug("aaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccc");
+
             Thread.sleep(5000);
         }
     }

@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
  * @time 2019-03-28 11:15
  **/
 @Configuration
-@EnableApolloConfig
 @EnableConfigurationProperties({CommonProperties.class})
 public class AppConfig {
 
